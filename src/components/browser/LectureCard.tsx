@@ -41,7 +41,9 @@ export function LectureCard({ lecture, highlight, rank }: Props) {
         <div className="mb-2">
           <SectionBadge sectionId={lecture.sectionId} />
         </div>
-        <h3 className="font-bold text-gray-900 mb-2 leading-snug">{lecture.title}</h3>
+        <h3 className="font-bold text-gray-900 mb-2 leading-snug">
+          <span className="text-indigo-500 mr-1">{lecture.id}：</span>{lecture.title}
+        </h3>
         <p className="text-sm text-gray-500 mb-3 line-clamp-2">{lecture.description}</p>
         <div className="flex flex-wrap gap-1 mb-2">
           {lecture.ageGroups.map((a) => (

@@ -35,7 +35,9 @@ export function LectureModal({ lecture, onClose }: Props) {
         <div className="mb-3">
           <SectionBadge sectionId={lecture.sectionId} size="md" />
         </div>
-        <h2 className="text-xl font-bold text-gray-900 mb-3">{lecture.title}</h2>
+        <h2 className="text-xl font-bold text-gray-900 mb-3">
+          <span className="text-indigo-500 mr-1">{lecture.id}：</span>{lecture.title}
+        </h2>
         <p className="text-gray-600 mb-4 leading-relaxed">{lecture.description}</p>
         <div className="mb-3">
           <p className="text-xs font-semibold text-gray-500 mb-1">対象年齢</p>
