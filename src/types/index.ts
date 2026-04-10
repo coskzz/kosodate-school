@@ -31,6 +31,7 @@ export interface Lecture {
   ageGroups: AgeGroup[];
   concerns: ConcernKey[];
   keywords: string[];
+  url: string;
 }
 
 export interface Section {

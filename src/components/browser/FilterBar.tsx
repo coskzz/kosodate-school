@@ -43,8 +43,8 @@ export function FilterBar({
               onClick={() => setSelectedSection(selectedSection === s.id ? null : s.id)}
               className={`text-xs px-3 py-1.5 rounded-full border transition ${
                 selectedSection === s.id
-                  ? 'bg-indigo-600 text-white border-indigo-600'
-                  : 'bg-white text-gray-600 border-gray-300 hover:border-indigo-400'
+                  ? 'bg-coral-400 text-white border-coral-400'
+                  : 'bg-white text-gray-600 border-gray-300 hover:border-coral-300'
               }`}
             >
               {s.id}. {s.title}
@@ -63,8 +63,8 @@ export function FilterBar({
               onClick={() => toggleAge(a.value)}
               className={`text-xs px-3 py-1.5 rounded-full border transition ${
                 selectedAges.includes(a.value)
-                  ? 'bg-blue-600 text-white border-blue-600'
-                  : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+                  ? 'bg-sky-500 text-white border-sky-500'
+                  : 'bg-white text-gray-600 border-gray-300 hover:border-sky-300'
               }`}
             >
               {a.label}
@@ -83,8 +83,8 @@ export function FilterBar({
               onClick={() => toggleConcern(c.key)}
               className={`text-xs px-3 py-1.5 rounded-full border transition ${
                 selectedConcerns.includes(c.key)
-                  ? 'bg-pink-600 text-white border-pink-600'
-                  : 'bg-white text-gray-600 border-gray-300 hover:border-pink-400'
+                  ? 'bg-pink-500 text-white border-pink-500'
+                  : 'bg-white text-gray-600 border-gray-300 hover:border-pink-300'
               }`}
             >
               {c.label}
@@ -96,7 +96,7 @@ export function FilterBar({
       {hasFilters && (
         <button
           onClick={clearFilters}
-          className="text-sm text-gray-500 underline hover:text-gray-700"
+          className="text-sm text-coral-500 underline hover:text-coral-600"
         >
           フィルタをクリア
         </button>

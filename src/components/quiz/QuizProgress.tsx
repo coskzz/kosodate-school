@@ -18,9 +18,9 @@ export function QuizProgress({ step }: Props) {
             <div
               className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-colors ${
                 currentStep > s
-                  ? 'bg-indigo-600 text-white'
+                  ? 'bg-coral-400 text-white'
                   : currentStep === s
-                  ? 'bg-indigo-600 text-white ring-4 ring-indigo-200'
+                  ? 'bg-coral-400 text-white ring-4 ring-coral-100'
                   : 'bg-gray-200 text-gray-400'
               }`}
             >
@@ -29,7 +29,7 @@ export function QuizProgress({ step }: Props) {
             {i < STEPS.length - 1 && (
               <div
                 className={`flex-1 h-1 mx-1 rounded transition-colors ${
-                  currentStep > s ? 'bg-indigo-600' : 'bg-gray-200'
+                  currentStep > s ? 'bg-coral-400' : 'bg-gray-200'
                 }`}
               />
             )}

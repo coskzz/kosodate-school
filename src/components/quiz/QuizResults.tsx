@@ -11,12 +11,17 @@ interface Props {
 export function QuizResults({ answer, onReset }: Props) {
   const { primary, secondary, rest } = useRecommendations(answer);
   const [showMore, setShowMore] = useState(false);
+  const base = import.meta.env.BASE_URL;
 
   return (
     <div>
       <div className="text-center mb-8">
-        <div className="text-4xl mb-3">🎯</div>
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">あなたへのおすすめ講義</h2>
+        <img
+          src={`${base}characters/hoshi-cheer.png`}
+          alt=""
+          className="w-24 h-24 object-contain mx-auto mb-3"
+        />
+        <h2 className="text-2xl font-bold text-gray-800 mb-2">あなたへのおすすめ講義</h2>
         <p className="text-gray-500">
           選んだ条件をもとに、今最も役立つ講義を選びました
         </p>
@@ -25,7 +30,7 @@ export function QuizResults({ answer, onReset }: Props) {
       {primary.length > 0 && (
         <section className="mb-8">
           <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
-            <span className="inline-block w-2 h-6 bg-indigo-600 rounded"></span>
+            <span className="inline-block w-2 h-6 bg-coral-400 rounded"></span>
             特におすすめの3講義
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -55,7 +60,7 @@ export function QuizResults({ answer, onReset }: Props) {
           {!showMore ? (
             <button
               onClick={() => setShowMore(true)}
-              className="w-full py-3 border-2 border-dashed border-gray-300 rounded-xl text-gray-500 hover:border-indigo-400 hover:text-indigo-600 transition"
+              className="w-full py-3 border-2 border-dashed border-coral-200 rounded-xl text-gray-500 hover:border-coral-400 hover:text-coral-500 transition"
             >
               もっと見る（残り{rest.length}講義）
             </button>
@@ -78,7 +83,7 @@ export function QuizResults({ answer, onReset }: Props) {
       <div className="text-center mt-8">
         <button
           onClick={onReset}
-          className="px-6 py-3 rounded-full border-2 border-indigo-600 text-indigo-600 font-semibold hover:bg-indigo-50 transition"
+          className="px-6 py-3 rounded-full border-2 border-coral-400 text-coral-500 font-semibold hover:bg-coral-50 transition"
         >
           診断をやり直す
         </button>

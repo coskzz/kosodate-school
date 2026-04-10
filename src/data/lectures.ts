@@ -1,6 +1,12 @@
 import type { Lecture } from '../types';
+import { lectureUrls } from './lectureUrls';
 
-export const lectures: Lecture[] = [
+const withUrl = (lecture: Omit<Lecture, 'url'>): Lecture => ({
+  ...lecture,
+  url: lectureUrls[lecture.id] || '',
+});
+
+export const lectures: Lecture[] = ([
   // Section 1: 子どもの脳と心について知っておくべきこと
   {
     id: '1-1',
@@ -406,4 +412,4 @@ export const lectures: Lecture[] = [
     concerns: ['screen_time', 'social'],
     keywords: ['ペアレンタルコントロール', 'Wi-Fi制限', '自動再生の無効化', 'オープンドア原則', 'デバイス寝室禁止', '個人情報保護', '問題サインの察知', 'ネット安全性', 'オープンコミュニケーション'],
   },
-];
+] as Omit<Lecture, 'url'>[]).map(withUrl);

@@ -43,7 +43,7 @@ export function QuizShell() {
           disabled={!canNext}
           className={`flex-1 py-3 rounded-full font-semibold transition ${
             canNext
-              ? 'bg-indigo-600 text-white hover:bg-indigo-700'
+              ? 'bg-coral-400 text-white hover:bg-coral-500'
               : 'bg-gray-200 text-gray-400 cursor-not-allowed'
           }`}
         >

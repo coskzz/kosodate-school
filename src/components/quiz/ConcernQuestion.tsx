@@ -9,7 +9,7 @@ interface MainConcernProps {
 export function MainConcernQuestion({ selected, onSelect }: MainConcernProps) {
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-2">最も気になる悩みは？</h2>
+      <h2 className="text-2xl font-bold text-gray-800 mb-2">最も気になる悩みは？</h2>
       <p className="text-gray-500 mb-6">1つだけ選んでください</p>
       <div className="space-y-2">
         {mainConcernOptions.map((opt) => (
@@ -18,8 +18,8 @@ export function MainConcernQuestion({ selected, onSelect }: MainConcernProps) {
             onClick={() => onSelect(opt.value)}
             className={`w-full p-4 rounded-xl border-2 text-left transition ${
               selected === opt.value
-                ? 'border-indigo-600 bg-indigo-50'
-                : 'border-gray-200 bg-white hover:border-indigo-300'
+                ? 'border-coral-400 bg-coral-50'
+                : 'border-gray-200 bg-white hover:border-coral-200'
             }`}
           >
             <span className="font-medium text-gray-800">{opt.label}</span>
@@ -38,7 +38,7 @@ interface SubConcernProps {
 export function SubConcernQuestion({ selected, onToggle }: SubConcernProps) {
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-2">その他の気になること</h2>
+      <h2 className="text-2xl font-bold text-gray-800 mb-2">その他の気になること</h2>
       <p className="text-gray-500 mb-6">当てはまるものをすべて選んでください（最大3つ）</p>
       <div className="space-y-2">
         {subConcernOptions.map((opt) => {
@@ -51,16 +51,16 @@ export function SubConcernQuestion({ selected, onToggle }: SubConcernProps) {
               disabled={isDisabled}
               className={`w-full p-4 rounded-xl border-2 text-left transition ${
                 isSelected
-                  ? 'border-indigo-600 bg-indigo-50'
+                  ? 'border-coral-400 bg-coral-50'
                   : isDisabled
                   ? 'border-gray-100 bg-gray-50 text-gray-400 cursor-not-allowed'
-                  : 'border-gray-200 bg-white hover:border-indigo-300'
+                  : 'border-gray-200 bg-white hover:border-coral-200'
               }`}
             >
               <div className="flex items-center gap-3">
                 <div
                   className={`w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 ${
-                    isSelected ? 'border-indigo-600 bg-indigo-600' : 'border-gray-300'
+                    isSelected ? 'border-coral-400 bg-coral-400' : 'border-gray-300'
                   }`}
                 >
                   {isSelected && <span className="text-white text-xs">✓</span>}
@@ -83,7 +83,7 @@ interface ValueProps {
 export function ValueQuestion({ selected, onToggle }: ValueProps) {
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-2">大切にしたいことは？</h2>
+      <h2 className="text-2xl font-bold text-gray-800 mb-2">大切にしたいことは？</h2>
       <p className="text-gray-500 mb-6">当てはまるものを2つまで選んでください</p>
       <div className="space-y-2">
         {valueOptions.map((opt) => {
@@ -96,16 +96,16 @@ export function ValueQuestion({ selected, onToggle }: ValueProps) {
               disabled={isDisabled}
               className={`w-full p-4 rounded-xl border-2 text-left transition ${
                 isSelected
-                  ? 'border-indigo-600 bg-indigo-50'
+                  ? 'border-coral-400 bg-coral-50'
                   : isDisabled
                   ? 'border-gray-100 bg-gray-50 text-gray-400 cursor-not-allowed'
-                  : 'border-gray-200 bg-white hover:border-indigo-300'
+                  : 'border-gray-200 bg-white hover:border-coral-200'
               }`}
             >
               <div className="flex items-center gap-3">
                 <div
                   className={`w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 ${
-                    isSelected ? 'border-indigo-600 bg-indigo-600' : 'border-gray-300'
+                    isSelected ? 'border-coral-400 bg-coral-400' : 'border-gray-300'
                   }`}
                 >
                   {isSelected && <span className="text-white text-xs">✓</span>}

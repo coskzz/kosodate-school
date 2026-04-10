@@ -5,4 +5,7 @@
 body {
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;
+  background-color: #FFF9F5;
+  color: #3D3D3D;
+  line-height: 1.75;
 }
