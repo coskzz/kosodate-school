@@ -23,7 +23,7 @@ export function HomePage() {
             今のお悩みにぴったりの<br />講義を見つけよう
           </h1>
           <p className="text-lg text-gray-500 mb-10">
-            子育ての学校・全39講義。3分の診断で、<br className="hidden sm:block" />
+            子育て図鑑・全39講義。3分の診断で、<br className="hidden sm:block" />
             あなたに合った講義がわかります。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

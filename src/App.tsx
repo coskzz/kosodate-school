@@ -10,7 +10,7 @@ function Header() {
       <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <img src={`${import.meta.env.BASE_URL}characters/hoshi-reading2.png`} alt="" className="w-8 h-8 object-contain" />
-          <span className="font-bold text-gray-800 text-lg">子育ての学校</span>
+          <span className="font-bold text-gray-800 text-lg">子育て図鑑</span>
         </Link>
         <nav className="flex gap-1">
           <Link
@@ -42,7 +42,7 @@ function Header() {
 function Footer() {
   return (
     <footer className="bg-baby-pink text-gray-500 text-center py-6 px-4">
-      <p className="text-sm">&copy; 2024 子育ての学校 おすすめ講義検索</p>
+      <p className="text-sm">&copy; 2024 子育て図鑑 おすすめ講義検索</p>
       <p className="text-xs mt-1 text-gray-400">全39講義の情報を基に診断・検索機能を提供しています</p>
     </footer>
   );
