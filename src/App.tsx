@@ -43,7 +43,7 @@ function Footer() {
   return (
     <footer className="bg-baby-pink text-gray-500 text-center py-6 px-4">
       <p className="text-sm">&copy; 2024 子育て図鑑 おすすめ講義検索</p>
-      <p className="text-xs mt-1 text-gray-400">全39講義の情報を基に診断・検索機能を提供しています</p>
+      <p className="text-xs mt-1 text-gray-400">全40講義の情報を基に診断・検索機能を提供しています</p>
     </footer>
   );
 }

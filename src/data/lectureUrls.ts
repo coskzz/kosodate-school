@@ -33,6 +33,7 @@ export const lectureUrls: Record<string, string> = {
   '7-2': 'https://s-school5690.teachable.com/courses/8be56c521/lectures/65199478',
   '7-3': 'https://s-school5690.teachable.com/courses/8be56c521/lectures/65199479',
   '7-4': 'https://s-school5690.teachable.com/courses/8be56c521/lectures/65199480',
+  '7-5': 'https://s-school5690.teachable.com/courses/8be56c521/lectures/65486803',
   '8-1': 'https://s-school5690.teachable.com/courses/8be56c521/lectures/65199441',
   '8-2': 'https://s-school5690.teachable.com/courses/8be56c521/lectures/65199442',
   '8-3': 'https://s-school5690.teachable.com/courses/8be56c521/lectures/65199443',

@@ -48,7 +48,7 @@ export const sections: Section[] = [
     title: '論理的思考と問題解決',
     description: '考える力・論理的思考・問題解決能力を育てる方法を、科学的根拠と共に学びます。',
     color: 'bg-teal-100 text-teal-700',
-    lectureCount: 4,
+    lectureCount: 5,
   },
   {
     id: 8,
