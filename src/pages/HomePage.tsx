@@ -23,7 +23,7 @@ export function HomePage() {
             今のお悩みにぴったりの<br />講義を見つけよう
           </h1>
           <p className="text-lg text-gray-500 mb-10">
-            子育て図鑑・全39講義。3分の診断で、<br className="hidden sm:block" />
+            子育て図鑑・全40講義。3分の診断で、<br className="hidden sm:block" />
             あなたに合った講義がわかります。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -69,7 +69,7 @@ export function HomePage() {
       {/* Sections overview */}
       <section className="py-16 px-4 bg-cream">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold text-center text-gray-800 mb-3">8つのセクション・全39講義</h2>
+          <h2 className="text-2xl font-bold text-center text-gray-800 mb-3">8つのセクション・全40講義</h2>
           <p className="text-center text-gray-500 mb-10">科学的根拠に基づいた子育ての知恵が詰まっています</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {sections.map((s) => (

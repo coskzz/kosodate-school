@@ -22,7 +22,7 @@ export function BrowserPage() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">講義を探す</h1>
-          <p className="text-gray-500">全39講義をセクション・悩み・年齢でフィルタできます</p>
+          <p className="text-gray-500">全40講義をセクション・悩み・年齢でフィルタできます</p>
         </div>
 
         <div className="mb-6">
